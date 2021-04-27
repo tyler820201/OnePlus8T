@@ -1,0 +1,27 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      system                                                                flags=display="System";backup=1;logical;
+/system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;
+/system_ext         ext4      system_ext                                                            flags=display="System_ext";backup=1;logical;
+/system_ext_image   emmc      system_ext                                                            flags=display="System_ext image";backup=1;flashimg=1;logical;
+/product            ext4      product                                                               flags=display="Product";backup=1;logical;
+/product_image      emmc      product                                                               flags=display="Product image";backup=1;flashimg=1;logical;
+/vendor             ext4      vendor                                                                flags=display="Vendor";backup=1;logical;
+/vendor_image       emmc      vendor                                                                flags=display="Vendor image";backup=1;flashimg=1;logical;
+/odm                ext4      odm                                                                   flags=display="Odm";backup=1;logical;
+/odm_image          emmc      odm                                                                   flags=display="Odm image";backup=1;flashimg=1;logical;
+/metadata           ext4      /dev/block/bootdevice/by-name/metadata                                flags=display="Metadata";
+/data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=display="Data";
+/persist            ext4      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist";
+/persist_image      emmc      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist image";backup=1;flashimg=1;
+/misc               emmc      /dev/block/bootdevice/by-name/misc                                    flags=display="Misc";backup=1;flashimg=1;
+/usbotg             vfat      /devices/platform/soc/*.ssusb/*.dwc3/xhci-hcd.*.auto*                 flags=display="Usbotg";
+/spunvm             vfat      /dev/block/bootdevice/by-name/spunvm                                  flags=display="Spunvm";
+/firmware_mnt       vfat      /dev/block/bootdevice/by-name/modem                                   flags=display="Firmware_mnt";
+/dsp                ext4      /dev/block/bootdevice/by-name/dsp                                     flags=display="Dsp";
+/bt_firmware        vfat      /dev/block/bootdevice/by-name/bluetooth                               flags=display="Bt_firmware";
+/sdcard1            vfat      /dev/block/mmcblk0p1                                                  flags=display="Sdcard1";
+/boot               emmc      /dev/block/bootdevice/by-name/boot                                    flags=display="Boot";backup=1;flashimg=1;
+/recovery           emmc      /dev/block/bootdevice/by-name/recovery                                flags=display="Recovery";backup=1;flashimg=1;
+/op2                ext4      /dev/block/bootdevice/by-name/op2                                     flags=display="Op2";
+/misc               emmc      /dev/block/bootdevice/by-name/misc                                    flags=display="Misc";backup=1;flashimg=1;
+/modemdump          ext4      /dev/block/bootdevice/by-name/modemdump                               flags=display="Modemdump";

@@ -18,3 +18,13 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/omni_OnePlus8T.mk
+     
+     
+COMMON_LUNCH_CHOICES := \
+   omni_OnePlus8T-user \
+   omni_OnePlus8T-userdebug \
+   omni_OnePlus8T-eng
+   
+   
+   
+    

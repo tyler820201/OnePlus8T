@@ -36,3 +36,7 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus
 PRODUCT_MANUFACTURER := oneplus
 PRODUCT_RELEASE_NAME := OnePlus OnePlus
+
+# HACK: Set vendor patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
